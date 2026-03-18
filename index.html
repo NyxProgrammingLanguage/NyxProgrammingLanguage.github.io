@@ -1,42 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Nyx Programming Language</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0b0b14;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #0b0b14;
+      border-bottom: 1px solid #1e1e2f;
+      align-items: center;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #a855f7, #6366f1, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #7c3aed, #3b82f6);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #bbb;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #111122;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #222;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+      border-top: 1px solid #1e1e2f;
+    }
+  </style>
 </head>
+
 <body>
 
+<!-- NAV -->
 <nav>
-  <div><b>Nyx</b></div>
+  <div class="logo">
+
+    <!-- 🔥 YOUR OFFICIAL NYX LOGO -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <rect width="512" height="512" fill="#f4f3ff"/>
+      <defs>
+        <linearGradient id="nyxPurpleBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#14002B"/>
+          <stop offset="25%" stop-color="#3F007D"/>
+          <stop offset="50%" stop-color="#5A189A"/>
+          <stop offset="75%" stop-color="#3949AB"/>
+          <stop offset="100%" stop-color="#007BFF"/>
+        </linearGradient>
+        <clipPath id="nClip">
+          <path d="M140 380 L140 130 L200 130 L310 300 L310 130 L370 130 L370 380 L310 380 L200 210 L200 380 Z"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#nClip)">
+        <rect width="512" height="512" fill="url(#nyxPurpleBlue)"/>
+      </g>
+      <text x="385" y="145" font-size="36" font-weight="700" fill="#1a1a1a">™</text>
+    </svg>
+
+    <b>Nyx™</b>
+  </div>
+
   <div>
     <a href="index.html">Home</a>
     <a href="docs.html">Docs</a>
     <a href="download.html">Download</a>
+    <a href="trademark.html">Trademark</a>
     <a href="https://github.com/NyxProgrammingLanguage/Nyx-Programming-Language">GitHub</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
-  <h1>🚀 Nyx Programming Language</h1>
-  <p>Use Nyx freely. Build. Grow. When you succeed — pay.</p>
-  <br>
+  <h1>Nyx Programming Language</h1>
+  <p>One platform. Full stack. From kernel → cloud.</p>
+
   <a class="btn" href="download.html">Get Started</a>
 </div>
 
+<!-- FEATURES -->
 <div class="section">
-  <h2>🔥 Features</h2>
-  <p>Language + VM + JIT + Web + UI + Hypervisor</p>
-  <p>Designed for performance, control, and scalability</p>
+  <h2>🔥 Full Stack by Design</h2>
+
+  <div class="grid">
+    <div class="card">Language + Compiler</div>
+    <div class="card">VM + JIT Runtime</div>
+    <div class="card">Native UI System</div>
+    <div class="card">Web Framework</div>
+    <div class="card">Hypervisor + BIOS</div>
+    <div class="card">Cloud-ready Architecture</div>
+  </div>
 </div>
 
+<!-- PHILOSOPHY -->
 <div class="section">
-  <h2>⚡ Why Nyx?</h2>
-  <p>Unified platform for modern systems programming</p>
-  <p>From backend → UI → firmware</p>
+  <h2>⚡ Philosophy</h2>
+  <p>Build without limits. Control everything from hardware to UI.</p>
+  <p>Use Nyx freely. When you win — you pay.</p>
 </div>
 
+<!-- LEGAL -->
+<div class="section">
+  <h2>⚖️ Brand & Protection</h2>
+  <p>Nyx™ is a unified ecosystem protected under a master trademark.</p>
+  <a class="btn" href="trademark.html">View Trademark Policy</a>
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
-  <p>© 2026 Nyx Programming Language</p>
+  © 2026 Nyx Programming Language
 </div>
 
 </body>
